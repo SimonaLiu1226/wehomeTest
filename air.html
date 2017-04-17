@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>Air Quality Index</title>
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=a5656b214d3f7e15ccbe279d439f99f5&plugin=AMap.Autocomplete"></script> 
+  <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+  <link rel="stylesheet" type="text/css" href="air.css">
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+  <div class="set row">
+    <div id="LLData" class="col-xs-4">
+      经纬度指数显示区域
+    </div>
+    <div class="col-xs-4 col-md-offset-5" id="btn">
+      <button id="pm25" class="index">PM2.5</button>
+      <button id="pm10" class="index">PM10</button>
+      <button id="ozone" class="index">Ozone</button>
+      <button id="no2" class="index">NO</button>
+      <button id="so2" class="index">SO</button>
+      <button id="co" class="index">CO</button>
+    </div>
+    <div id="cityData" class="col-xs-4">
+      城市指数显示区域
+    </div>
+
+    <div id="container"></div>
+  </div>
+</body>
+<script src="air.js"></script>
+</html>
